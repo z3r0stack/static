@@ -256,7 +256,7 @@ The HTML link element links a CSS file to an HTML file so that CSS styling can b
 <link rel="stylesheet" type="text/css" href="main.css"/>
 ```
 
-####About link:
+#### About link:
 
 The link element uses three attributes:
 
@@ -270,7 +270,7 @@ Like the HTML image element, link is self-closing. It does not need a closing ta
 
 In the example above, **main.css** is an external style sheet. Using external stylesheets is one of the most popular ways to write CSS. Inline CSS is another method.
 
-##3. Anatomy of a CSS Rule
+## 3. Anatomy of a CSS Rule
 Awesome job! Now **main.css** is linked to **index.html**. Before we start writing our own CSS, let's take a look at how CSS code works.
 
 The diagram to the right shows the anatomy of a CSS rule:
@@ -286,7 +286,7 @@ The diagram to the right shows the anatomy of a CSS rule:
 ## 4. Font-family
 One of the most effective ways to enhance the look and feel of a website is by changing the font. In CSS, font is managed using the font-family property:
 
-```
+```css
 h1 {
   font-family: Georgia, serif;
 }
@@ -621,11 +621,11 @@ Take a look at the web browser. In this lesson, we will build this webpage up fr
 
 Also in this lesson, we will encounter three new HTML elements:
 
-header: Used to organize headers on a webpage.
+- `header`: Used to organize headers on a webpage.
 
-footer: Used to organize footers on a webpage.
+- `footer`: Used to organize footers on a webpage.
 
-section: Defines sections on a webpage.
+- `section`: Defines sections on a webpage.
 
 ## 2. Connecting to Bootstrap
 
@@ -657,13 +657,13 @@ In the diagram, observe the following:
 
 1. Bootstrap's grid columns are represented by 12 vertical bars. The boxes represent HTML elements.
 
-2. The words "container", "jumbotron", "col-sm-6" and "col-sm-3" refer to Bootstrap classes. 
+2. The words `"container"`, `"jumbotron"`, "col-sm-6" and "col-sm-3" refer to Bootstrap classes. 
 
-3. The element with class "jumbotron" spans the entire width of the webpage, beyond the borders of the grid. 
+3. The element with class `"jumbotron"` spans the entire width of the webpage, beyond the borders of the grid. 
 
-4. Elements inside the second "container", such as "col-sm-6" and "col-sm-3" are contained within the grid columns. 
+4. Elements inside the second `"container"`, such as "col-sm-6" and `"col-sm-3"` are contained within the grid columns. 
 
-5. Elements labeled "col-sm-3" take up three grid columns; elements labeled "col-sm-6" take up six grid columns.
+5. Elements labeled `"col-sm-3"` take up three grid columns; elements labeled `"col-sm-6"` take up six grid columns.
 
 <img src="http://www.clipular.com/c/6537072850763776.png?k=h2eoo7RuypHQwgdwqTDPMnXjnWE" alt="alt text" title="Title" />
 
