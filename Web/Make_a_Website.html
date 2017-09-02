@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="mobile-web-app-capable" content="yes">
+    <title>
+        Make a Website by Codecademy - HackMD
+    </title>
+    <link rel="icon" type="image/png" href="https://hackmd.io/favicon.png">
+    <link rel="apple-touch-icon" href="https://hackmd.io/apple-touch-icon.png">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha256-916EbMg70RQy9LHiGkXzG8hSg9EdNy97GazNG/aiY1w=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css" integrity="sha256-3iu9jgsy9TpTwXKb7bNQzqWekRX7pPK+2OLj3R922fo=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/octicons/3.5.0/octicons.min.css" integrity="sha256-QiWfLIsCT02Sdwkogf6YMiQlj4NE84MKkzEMkZnMGdg=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.5.1/themes/prism.min.css" integrity="sha256-vtR0hSWRc3Tb26iuN2oZHt3KRUomwTufNIf5/4oeCyg=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.7.0/styles/github-gist.min.css" integrity="sha256-tAflq+ymku3Khs+I/WcAneIlafYgDiOQ9stIHH985Wo=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/emojify.js/1.1.0/css/basic/emojify.min.css" integrity="sha256-UOrvMOsSDSrW6szVLe8ZDZezBxh5IoIfgTwdNDgTjiU=" crossorigin="anonymous" />
+    <style>
+        @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400italic,600,600italic,300italic,300|Source+Serif+Pro|Source+Code+Pro:400,300,500&subset=latin,latin-ext);.markdown-body{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif;font-size:16px;line-height:1.5;word-wrap:break-word}.markdown-body:after,.markdown-body:before{display:table;content:""}.markdown-body:after{clear:both}.markdown-body>:first-child{margin-top:0!important}.markdown-body>:last-child{margin-bottom:0!important}.markdown-body a:not([href]){color:inherit;text-decoration:none}.markdown-body .absent{color:#c00}.markdown-body .anchor{float:left;padding-right:4px;margin-left:-20px;line-height:1}.markdown-body .anchor:focus{outline:none}.markdown-body blockquote,.markdown-body dl,.markdown-body ol,.markdown-body p,.markdown-body pre,.markdown-body table,.markdown-body ul{margin-top:0;margin-bottom:16px}.markdown-body hr{height:.25em;padding:0;margin:24px 0;background-color:#e7e7e7;border:0}.markdown-body blockquote{padding:0 1em;color:#777;border-left:.25em solid #ddd}.markdown-body blockquote>:first-child{margin-top:0}.markdown-body blockquote>:last-child{margin-bottom:0}.markdown-body .loweralpha{list-style-type:lower-alpha}.markdown-body h1,.markdown-body h2,.markdown-body h3,.markdown-body h4,.markdown-body h5,.markdown-body h6{margin-top:24px;margin-bottom:16px;font-weight:600;line-height:1.25}.markdown-body h1 .octicon-link,.markdown-body h2 .octicon-link,.markdown-body h3 .octicon-link,.markdown-body h4 .octicon-link,.markdown-body h5 .octicon-link,.markdown-body h6 .octicon-link{color:#000;vertical-align:middle;visibility:hidden}.markdown-body h1:hover .anchor,.markdown-body h2:hover .anchor,.markdown-body h3:hover .anchor,.markdown-body h4:hover .anchor,.markdown-body h5:hover .anchor,.markdown-body h6:hover .anchor{text-decoration:none}.markdown-body h1:hover .anchor .octicon-link,.markdown-body h2:hover .anchor .octicon-link,.markdown-body h3:hover .anchor .octicon-link,.markdown-body h4:hover .anchor .octicon-link,.markdown-body h5:hover .anchor .octicon-link,.markdown-body h6:hover .anchor .octicon-link{visibility:visible}.markdown-body h1 code,.markdown-body h1 tt,.markdown-body h2 code,.markdown-body h2 tt,.markdown-body h3 code,.markdown-body h3 tt,.markdown-body h4 code,.markdown-body h4 tt,.markdown-body h5 code,.markdown-body h5 tt,.markdown-body h6 code,.markdown-body h6 tt{font-size:inherit}.markdown-body h1{font-size:2em}.markdown-body h1,.markdown-body h2{padding-bottom:.3em;border-bottom:1px solid #eee}.markdown-body h2{font-size:1.5em}.markdown-body h3{font-size:1.25em}.markdown-body h4{font-size:1em}.markdown-body h5{font-size:.875em}.markdown-body h6{font-size:.85em;color:#777}.markdown-body ol,.markdown-body ul{padding-left:2em}.markdown-body ol.no-list,.markdown-body ul.no-list{padding:0;list-style-type:none}.markdown-body ol ol,.markdown-body ol ul,.markdown-body ul ol,.markdown-body ul ul{margin-top:0;margin-bottom:0}.markdown-body li>p{margin-top:16px}.markdown-body li+li{margin-top:.25em}.markdown-body dl{padding:0}.markdown-body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:700}.markdown-body dl dd{padding:0 16px;margin-bottom:16px}.markdown-body table{display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}.markdown-body table th{font-weight:700}.markdown-body table td,.markdown-body table th{padding:6px 13px;border:1px solid #ddd}.markdown-body table tr{background-color:#fff;border-top:1px solid #ccc}.markdown-body table tr:nth-child(2n){background-color:#f8f8f8}.markdown-body img{max-width:100%;box-sizing:content-box;background-color:#fff}.markdown-body img[align=right]{padding-left:20px}.markdown-body img[align=left]{padding-right:20px}.markdown-body .emoji{max-width:none;vertical-align:text-top;background-color:transparent}.markdown-body span.frame{display:block;overflow:hidden}.markdown-body span.frame>span{display:block;float:left;width:auto;padding:7px;margin:13px 0 0;overflow:hidden;border:1px solid #ddd}.markdown-body span.frame span img{display:block;float:left}.markdown-body span.frame span span{display:block;padding:5px 0 0;clear:both;color:#333}.markdown-body span.align-center{display:block;overflow:hidden;clear:both}.markdown-body span.align-center>span{display:block;margin:13px auto 0;overflow:hidden;text-align:center}.markdown-body span.align-center span img{margin:0 auto;text-align:center}.markdown-body span.align-right{display:block;overflow:hidden;clear:both}.markdown-body span.align-right>span{display:block;margin:13px 0 0;overflow:hidden;text-align:right}.markdown-body span.align-right span img{margin:0;text-align:right}.markdown-body span.float-left{display:block;float:left;margin-right:13px;overflow:hidden}.markdown-body span.float-left span{margin:13px 0 0}.markdown-body span.float-right{display:block;float:right;margin-left:13px;overflow:hidden}.markdown-body span.float-right>span{display:block;margin:13px auto 0;overflow:hidden;text-align:right}.markdown-body code,.markdown-body tt{padding:0;padding-top:.2em;padding-bottom:.2em;margin:0;font-size:85%;background-color:rgba(0,0,0,.04);border-radius:3px}.markdown-body code:after,.markdown-body code:before,.markdown-body tt:after,.markdown-body tt:before{letter-spacing:-.2em;content:"\A0"}.markdown-body code br,.markdown-body tt br{display:none}.markdown-body del code{text-decoration:inherit}.markdown-body pre{word-wrap:normal}.markdown-body pre>code{padding:0;margin:0;font-size:100%;word-break:normal;white-space:pre;background:transparent;border:0}.markdown-body .highlight{margin-bottom:16px}.markdown-body .highlight pre{margin-bottom:0;word-break:normal}.markdown-body .highlight pre,.markdown-body pre{padding:16px;overflow:auto;font-size:85%;line-height:1.45;background-color:#f7f7f7;border-radius:3px}.markdown-body pre code,.markdown-body pre tt{display:inline;max-width:auto;padding:0;margin:0;overflow:visible;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}.markdown-body pre code:after,.markdown-body pre code:before,.markdown-body pre tt:after,.markdown-body pre tt:before{content:normal}.markdown-body .csv-data td,.markdown-body .csv-data th{padding:5px;overflow:hidden;font-size:12px;line-height:1;text-align:left;white-space:nowrap}.markdown-body .csv-data .blob-line-num{padding:10px 8px 9px;text-align:right;background:#fff;border:0}.markdown-body .csv-data tr{border-top:0}.markdown-body .csv-data th{font-weight:700;background:#f8f8f8;border-top:0}.markdown-body kbd{display:inline-block;padding:3px 5px;font-size:11px;line-height:10px;color:#555;vertical-align:middle;background-color:#fcfcfc;border:1px solid #ccc;border-bottom-color:#bbb;border-radius:3px;box-shadow:inset 0 -1px 0 #bbb}.news .alert .markdown-body blockquote{padding:0 0 0 40px;border:0 none}.activity-tab .news .alert .commits,.activity-tab .news .markdown-body blockquote{padding-left:0}.task-list-item{list-style-type:none}.task-list-item label{font-weight:400}.task-list-item.enabled label{cursor:pointer}.task-list-item+.task-list-item{margin-top:3px}.task-list-item-checkbox{float:left;margin:.31em 0 .2em -1.3em!important;vertical-align:middle;cursor:default!important}.markdown-body{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Helvetica,Arial,sans-serif;padding-top:40px;padding-bottom:40px;max-width:758px;overflow:visible!important}.markdown-body pre{border:inherit!important}.markdown-body code{color:inherit!important}.markdown-body pre code .wrapper{display:-moz-inline-flex;display:-ms-inline-flex;display:-o-inline-flex;display:inline-flex}.markdown-body pre code .gutter{float:left;overflow:hidden;-webkit-user-select:none;user-select:none}.markdown-body pre code .gutter.linenumber{text-align:right;position:relative;display:inline-block;cursor:default;z-index:4;padding:0 8px 0 0;min-width:20px;box-sizing:content-box;color:#afafaf!important;border-right:3px solid #6ce26c!important}.markdown-body pre code .gutter.linenumber>span:before{content:attr(data-linenumber)}.markdown-body pre code .code{float:left;margin:0 0 0 16px}.markdown-body .gist .line-numbers{border-left:none;border-top:none;border-bottom:none}.markdown-body .gist .line-data{border:none}.markdown-body .gist table{border-spacing:0;border-collapse:inherit!important}.markdown-body code[data-gist-id]{background:none;padding:0}.markdown-body code[data-gist-id]:after,.markdown-body code[data-gist-id]:before{content:""}.markdown-body code[data-gist-id] .blob-num{border:unset}.markdown-body code[data-gist-id] table{overflow:unset;margin-bottom:unset}.markdown-body code[data-gist-id] table tr{background:unset}.markdown-body[dir=rtl] pre{direction:ltr}.markdown-body[dir=rtl] code{direction:ltr;unicode-bidi:embed}.markdown-body .alert>p{margin-bottom:0}.markdown-body pre.abc,.markdown-body pre.flow-chart,.markdown-body pre.graphviz,.markdown-body pre.mermaid,.markdown-body pre.sequence-diagram{text-align:center;background-color:inherit;border-radius:0;white-space:inherit}.markdown-body pre.abc>code,.markdown-body pre.flow-chart>code,.markdown-body pre.graphviz>code,.markdown-body pre.mermaid>code,.markdown-body pre.sequence-diagram>code{text-align:left}.markdown-body pre.abc>svg,.markdown-body pre.flow-chart>svg,.markdown-body pre.graphviz>svg,.markdown-body pre.mermaid>svg,.markdown-body pre.sequence-diagram>svg{max-width:100%;height:100%}.markdown-body pre>code.wrap{white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space:-o-pre-wrap;word-wrap:break-word}.markdown-body .alert>p,.markdown-body .alert>ul{margin-bottom:0}.vimeo,.youtube{cursor:pointer;display:table;text-align:center;background-position:50%;background-repeat:no-repeat;background-size:contain;background-color:#000;overflow:hidden}.vimeo,.youtube{position:relative;width:100%}.youtube{padding-bottom:56.25%}.vimeo img{width:100%;object-fit:contain;z-index:0}.youtube img{object-fit:cover;z-index:0}.vimeo iframe,.youtube iframe,.youtube img{width:100%;height:100%;position:absolute;top:0;left:0}.vimeo iframe,.youtube iframe{vertical-align:middle;z-index:1}.vimeo .icon,.youtube .icon{position:absolute;height:auto;width:auto;top:50%;left:50%;transform:translate(-50%,-50%);color:#fff;opacity:.3;transition:opacity .2s;z-index:0}.vimeo:hover .icon,.youtube:hover .icon{opacity:.6;transition:opacity .2s}.slideshare .inner,.speakerdeck .inner{position:relative;width:100%}.slideshare .inner iframe,.speakerdeck .inner iframe{position:absolute;top:0;bottom:0;left:0;right:0;width:100%;height:100%}.MJX_Assistive_MathML{display:none}.ui-infobar{position:relative;z-index:2;max-width:758px;margin-top:25px;margin-bottom:-25px;color:#777}.ui-toc{position:fixed;bottom:20px;z-index:10000}.ui-toc-label{opacity:.3;background-color:#ccc;border:none;transition:opacity .2s}.ui-toc .open .ui-toc-label{opacity:1;color:#fff;transition:opacity .2s}.ui-toc-label:focus{opacity:.3;background-color:#ccc;color:#000}.ui-toc-label:hover{opacity:1;background-color:#ccc;transition:opacity .2s}.ui-toc-dropdown{margin-top:23px;margin-bottom:20px;padding-left:10px;padding-right:10px;max-width:45vw;width:25vw;max-height:70vh;overflow:auto;text-align:inherit}.ui-toc-dropdown>.toc{max-height:calc(70vh - 100px);overflow:auto}.ui-toc-dropdown[dir=rtl] .nav{padding-right:0;letter-spacing:.0029em}.ui-toc-dropdown a{overflow:hidden;text-overflow:ellipsis;white-space:pre}.ui-toc-dropdown .nav>li>a{display:block;padding:4px 20px;font-size:13px;font-weight:500;color:#767676}.ui-toc-dropdown .nav>li:first-child:last-child > ul,.ui-toc-dropdown .toc.expand ul{display:block}.ui-toc-dropdown .nav>li>a:focus,.ui-toc-dropdown .nav>li>a:hover{padding-left:19px;color:#000;text-decoration:none;background-color:transparent;border-left:1px solid #000}.ui-toc-dropdown[dir=rtl] .nav>li>a:focus,.ui-toc-dropdown[dir=rtl] .nav>li>a:hover{padding-right:19px;border-left:none;border-right:1px solid #000}.ui-toc-dropdown .nav>.active:focus>a,.ui-toc-dropdown .nav>.active:hover>a,.ui-toc-dropdown .nav>.active>a{padding-left:18px;font-weight:700;color:#000;background-color:transparent;border-left:2px solid #000}.ui-toc-dropdown[dir=rtl] .nav>.active:focus>a,.ui-toc-dropdown[dir=rtl] .nav>.active:hover>a,.ui-toc-dropdown[dir=rtl] .nav>.active>a{padding-right:18px;border-left:none;border-right:2px solid #000}.ui-toc-dropdown .nav .nav{display:none;padding-bottom:10px}.ui-toc-dropdown .nav>.active>ul{display:block}.ui-toc-dropdown .nav .nav>li>a{padding-top:1px;padding-bottom:1px;padding-left:30px;font-size:12px;font-weight:400}.ui-toc-dropdown[dir=rtl] .nav .nav>li>a{padding-right:30px}.ui-toc-dropdown .nav .nav>li>ul>li>a{padding-top:1px;padding-bottom:1px;padding-left:40px;font-size:12px;font-weight:400}.ui-toc-dropdown[dir=rtl] .nav .nav>li>ul>li>a{padding-right:40px}.ui-toc-dropdown .nav .nav>li>a:focus,.ui-toc-dropdown .nav .nav>li>a:hover{padding-left:29px}.ui-toc-dropdown[dir=rtl] .nav .nav>li>a:focus,.ui-toc-dropdown[dir=rtl] .nav .nav>li>a:hover{padding-right:29px}.ui-toc-dropdown .nav .nav>li>ul>li>a:focus,.ui-toc-dropdown .nav .nav>li>ul>li>a:hover{padding-left:39px}.ui-toc-dropdown[dir=rtl] .nav .nav>li>ul>li>a:focus,.ui-toc-dropdown[dir=rtl] .nav .nav>li>ul>li>a:hover{padding-right:39px}.ui-toc-dropdown .nav .nav>.active:focus>a,.ui-toc-dropdown .nav .nav>.active:hover>a,.ui-toc-dropdown .nav .nav>.active>a{padding-left:28px;font-weight:500}.ui-toc-dropdown[dir=rtl] .nav .nav>.active:focus>a,.ui-toc-dropdown[dir=rtl] .nav .nav>.active:hover>a,.ui-toc-dropdown[dir=rtl] .nav .nav>.active>a{padding-right:28px}.ui-toc-dropdown .nav .nav>.active>.nav>.active:focus>a,.ui-toc-dropdown .nav .nav>.active>.nav>.active:hover>a,.ui-toc-dropdown .nav .nav>.active>.nav>.active>a{padding-left:38px;font-weight:500}.ui-toc-dropdown[dir=rtl] .nav .nav>.active>.nav>.active:focus>a,.ui-toc-dropdown[dir=rtl] .nav .nav>.active>.nav>.active:hover>a,.ui-toc-dropdown[dir=rtl] .nav .nav>.active>.nav>.active>a{padding-right:38px}.markdown-body[lang^=ja]{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Helvetica,Arial,Hiragino Kaku Gothic Pro,\\30D2\30E9\30AE\30CE\89D2\30B4 Pro W3,Osaka,Meiryo,\\30E1\30A4\30EA\30AA,MS Gothic,"\FF2D\FF33   \30B4\30B7\30C3\30AF",sans-serif}.ui-toc-dropdown[lang^=ja]{font-family:Source Sans Pro,Helvetica,Arial,Meiryo UI,MS PGothic,"\FF2D\FF33   \FF30\30B4\30B7\30C3\30AF",sans-serif}.markdown-body[lang=zh-tw]{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Helvetica,Arial,PingFang TC,Microsoft JhengHei,\\5FAE\8EDF\6B63\9ED1,sans-serif}.ui-toc-dropdown[lang=zh-tw]{font-family:Source Sans Pro,Helvetica,Arial,Microsoft JhengHei UI,\\5FAE\8EDF\6B63\9ED1UI,sans-serif}.markdown-body[lang=zh-cn]{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Helvetica,Arial,PingFang SC,Microsoft YaHei,\\5FAE\8F6F\96C5\9ED1,sans-serif}.ui-toc-dropdown[lang=zh-cn]{font-family:Source Sans Pro,Helvetica,Arial,Microsoft YaHei UI,\\5FAE\8F6F\96C5\9ED1UI,sans-serif}.ui-affix-toc{position:fixed;top:0;max-width:15vw;max-height:70vh;overflow:auto}.back-to-top,.expand-toggle,.go-to-bottom{display:block;padding:4px 10px;margin-top:10px;margin-left:10px;font-size:12px;font-weight:500;color:#999}.back-to-top:focus,.back-to-top:hover,.expand-toggle:focus,.expand-toggle:hover,.go-to-bottom:focus,.go-to-bottom:hover{color:#563d7c;text-decoration:none}.back-to-top,.go-to-bottom{margin-top:0}.ui-user-icon{width:20px;height:20px;display:block;border-radius:3px;margin-top:2px;margin-bottom:2px;margin-right:5px;background-position:50%;background-repeat:no-repeat;background-size:contain}.ui-user-icon.small{width:18px;height:18px;display:inline-block;vertical-align:middle;margin:0 0 .2em}small span{line-height:22px}small .dropdown{display:inline-block}small .dropdown a:focus,small .dropdown a:hover{text-decoration:none}.unselectable{-moz-user-select:none;-webkit-user-select:none;-o-user-select:none;user-select:none}@media print{blockquote,div,img,pre,table{page-break-inside:avoid!important}a[href]:after{font-size:12px!important}}.markdown-body.slides{position:relative;z-index:1;color:#222}.markdown-body.slides:before{content:"";display:block;position:absolute;top:0;left:0;right:0;bottom:0;z-index:-1;background-color:currentColor;box-shadow:0 0 0 50vw}.markdown-body.slides section[data-markdown]{position:relative;margin-bottom:1.5em;background-color:#fff;text-align:center}.markdown-body.slides section[data-markdown] code{text-align:left}.markdown-body.slides section[data-markdown]:before{content:"";display:block;padding-bottom:56.23%}.markdown-body.slides section[data-markdown]>div:first-child{position:absolute;top:50%;left:1em;right:1em;transform:translateY(-50%);max-height:100%;overflow:hidden}.markdown-body.slides section[data-markdown]>ul{display:inline-block}.markdown-body.slides>section>section+section:after{content:"";position:absolute;top:-1.5em;right:1em;height:1.5em;border:3px solid #777}body{font-smoothing:subpixel-antialiased!important;-webkit-font-smoothing:subpixel-antialiased!important;-moz-osx-font-smoothing:auto!important;text-shadow:0 0 1em transparent,1px 1px 1.2px rgba(0,0,0,.004);-webkit-overflow-scrolling:touch;font-family:Source Sans Pro,Helvetica,Arial,sans-serif;letter-spacing:.025em}.focus,:focus{outline:none!important}::-moz-focus-inner{border:0!important}body.modal-open{overflow-y:auto;padding-right:0!important}
+    </style>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    	<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" integrity="sha256-3Jy/GbSLrg0o9y5Z5n1uw0qxZECH7C6OQpVBgNFYa0g=" crossorigin="anonymous"></script>
+    	<script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js" integrity="sha256-g6iAfvZp+nDQ2TdTR/VVKJf3bGro4ub5fvWSWVRi2NE=" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/es5-shim/4.5.9/es5-shim.min.js" integrity="sha256-8E4Is26QH0bD52WoQpcB+R/tcWQtpzlCojrybUd7Mxo=" crossorigin="anonymous"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <div id="doc" class="markdown-body container-fluid"><h1 id="make-a-website-by-codecademy" style=""><a class="anchor hidden-xs" href="#make-a-website-by-codecademy" title="make-a-website-by-codecademy"><span class="octicon octicon-link"></span></a>Make a Website by Codecademy</h1><p>ref : <a href="https://www.codecademy.com/learn/make-a-website" target="_blank">link</a></p><h1 id="1-site-structure" style=""><a class="anchor hidden-xs" href="#1-site-structure" title="1-site-structure"><span class="octicon octicon-link"></span></a>1 - Site Structure</h1><h2 id="1-what-are-html-and-css" style=""><a class="anchor hidden-xs" href="#1-what-are-html-and-css" title="1-what-are-html-and-css"><span class="octicon octicon-link"></span></a>1. What are HTML and CSS?</h2><p>All websites use HTML and CSS. After learning both of these languages, you will be ready to build your own website!</p><ul>
+<li>
+<p>HTML stands for Hyper Text Markup Language. It is used to give websites structure with text, links, images, and other fundamental elements.</p>
+</li>
+<li>
+<p>CSS stands for Cascading Style Sheets. It is used to change the appearance of HTML elements.</p>
+</li>
+</ul><h2 id="2-anatomy-of-an-html-element" style=""><a class="anchor hidden-xs" href="#2-anatomy-of-an-html-element" title="2-anatomy-of-an-html-element"><span class="octicon octicon-link"></span></a>2. Anatomy of an HTML Element</h2><p>Let’s explore the basic anatomy of an HTML element. Line 9 of index.html contains a heading element:</p><pre><code class="html hljs"><span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>You're Building a Website!<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+</code></pre><p>All HTML elements begin with an opening tag. In this case, the opening tag is <code>&lt;h1&gt;</code>.</p><p>Most elements require a closing tag, denoted by a <code>/</code>. In this case, the closing tag is <code>&lt;/h1&gt;</code>.</p><p>The website user only sees the content between the opening and closing tags.</p><h2 id="3-add-a-heading" style=""><a class="anchor hidden-xs" href="#3-add-a-heading" title="3-add-a-heading"><span class="octicon octicon-link"></span></a>3. Add a Heading</h2><p>Now, let’s learn more about the heading element.</p><p>Headings are a frequently used HTML element. You can think of them like headlines in a newspaper. Your eyes may notice headings first because the words are large and bold compared to other text on the webpage.</p><p>There are six heading elements: <code>h1</code>, <code>h2</code>, <code>h3</code>, <code>h4</code>, <code>h5</code>, and <code>h6</code>. <code>h1</code> is the largest heading and <code>h6</code> is the smallest.</p><h2 id="4-add-a-paragraph" style=""><a class="anchor hidden-xs" href="#4-add-a-paragraph" title="4-add-a-paragraph"><span class="octicon octicon-link"></span></a>4. Add a Paragraph</h2><p>The webpage now has a heading and a tagline. Next, we will add a description of the company.</p><p>The HTML paragraph element, p, is used to hold one or more sentences, just like paragraphs in an essay or a book.</p><pre><code class="html hljs"><span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Paragraph text here<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+</code></pre><h2 id="5-anchor-elements" style=""><a class="anchor hidden-xs" href="#5-anchor-elements" title="5-anchor-elements"><span class="octicon octicon-link"></span></a>5. Anchor Elements</h2><p>Nice work! The webpage is starting to come together.</p><p>What if you wanted to link users to a different webpage? The HTML anchor element makes it possible to do this with a single click.</p><pre><code class="html hljs">&lt;a href=<span class="hljs-string">"http://google.com"</span>&gt; Click here <span class="hljs-keyword">for</span> Google!<span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span></span>
+</code></pre><p>Anchor elements use an attribute to link users to websites. Attributes customize the behavior or appearance of HTML elements. Anchor elements use the href attribute, which specifies the webpage to link to. In the example above, the text “Click here for Google!” links to <a href="http://google.com" target="_blank">http://google.com</a>.</p><h2 id="6-a-closer-look" style=""><a class="anchor hidden-xs" href="#6-a-closer-look" title="6-a-closer-look"><span class="octicon octicon-link"></span></a>6. A Closer Look</h2><p>Good job! Creating links with the anchor element is a fundamental web development skill.</p><p>The diagram to the right illustrates the different parts of the anchor element syntax. In the diagram, notice the following:</p><p>Any valid URL can be used for the value of the href attribute.</p><p>The URL must be enclosed with quotation marks.</p><p>Text between the <code>&lt;a&gt;</code> and <code>&lt;/a&gt;</code> tags can be as few or as many words as you would like.</p><h2 id="7-adding-images" style=""><a class="anchor hidden-xs" href="#7-adding-images" title="7-adding-images"><span class="octicon octicon-link"></span></a>7. Adding Images</h2><p>To add images to a webpage, use the HTML image element:</p><pre><code class="html hljs"><span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"https://s3.amazonaws.com/codecademy-content/projects/make-a-website/lesson-1/bikes1.jpg"</span>/&gt;</span>
+</code></pre><p>Just like websites have URLs, images on the web also have URLs. Image URLs typically end with the .jpg or .png file extension. The src attribute sets the source for an image element.</p><p>Image elements are self-closing, which means they do not need a closing tag.</p><h2 id="8-add-a-video" style=""><a class="anchor hidden-xs" href="#8-add-a-video" title="8-add-a-video"><span class="octicon octicon-link"></span></a>8. Add a Video</h2><p>Awesome! The photo makes the webpage much cooler. What’s cooler than a photo? A video!</p><p>The HTML video element can add video to a webpage.</p><pre><code class="html hljs">&lt;video width=<span class="hljs-string">"320"</span> height=<span class="hljs-string">"240"</span> controls&gt;
+  <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">source</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"video-url.mp4"</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"video/mp4"</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">video</span>&gt;</span></span>
+</code></pre><p>The video element uses a number of attributes. Let’s take a look at them:</p><ol>
+<li>
+<p><code>width</code> and <code>height</code>: Set the size of the screen that displays the video.</p>
+</li>
+<li>
+<p><code>controls</code>: Adds play, pause and volume control.</p>
+</li>
+<li>
+<p><code>source src</code>: Sets the URL of the video to play.</p>
+</li>
+<li>
+<p><code>type</code>: Specifies different video formats.</p>
+</li>
+</ol><h2 id="9-create-an-unordered-list" style=""><a class="anchor hidden-xs" href="#9-create-an-unordered-list" title="9-create-an-unordered-list"><span class="octicon octicon-link"></span></a>9. Create an Unordered List</h2><p>Impressive! With just five page elements, you’ve already created an interesting website!</p><p>Another essential HTML element is the unordered list. Items in an unordered list are referred to as list items. Each item is bulleted, not numbered. For example:</p><p>A list item<br>
+A second list item<br>
+A third list item<br>
+The HTML code for the list above:</p><pre><code class="html hljs"><span class="hljs-tag">&lt;<span class="hljs-name">ul</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>A list item<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>A second list item<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>A third list item<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+</code></pre><p>About unordered lists:</p><ol>
+<li>
+<p><code>ul</code> tags create the unordered list.</p>
+</li>
+<li>
+<p><code>li</code> tags contain each list item.<br>
+Unordered list elements can be used to organize content on a webpage in a number of ways. Below we will use one to organize our website’s navigation menu, sometimes called a navbar.</p>
+</li>
+</ol><h2 id="10-parent-and-child-elements" style=""><a class="anchor hidden-xs" href="#10-parent-and-child-elements" title="10-parent-and-child-elements"><span class="octicon octicon-link"></span></a>10. Parent and Child Elements</h2><p>With the video and unordered list elements, you may have noticed something interesting: these HTML elements had other HTML elements nested inside of them.</p><p>For example, in unordered lists, <code>li</code> elements are nested inside the <code>ul</code>.</p><pre><code class="html hljs"><span class="hljs-tag">&lt;<span class="hljs-name">ul</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>First item<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span> 
+  <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Second item<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+</code></pre><p>Web developers refer to the enclosing element as the parent element and the enclosed elements as children.</p><h2 id="11-add-a-div" style=""><a class="anchor hidden-xs" href="#11-add-a-div" title="11-add-a-div"><span class="octicon octicon-link"></span></a>11. Add a Div</h2><p>Now that we know about HTML element nesting and parent/child relationships, let’s see another way these concepts are applied on a real-life webpage.</p><p>Div elements divide your page by enclosing other elements. These enclosed groups of elements can then be organized, moved and styled independently from one another.</p><p>Div elements are often used with the class attribute. Here’s an example:</p><pre><code class="html hljs">&lt;div <span class="hljs-keyword">class</span>=<span class="hljs-string">"main"</span>&gt;
+ ...
+&lt;/div&gt;
+</code></pre><p>Note: The <code>...</code> indicates where other HTML elements would normally be enclosed by the div.</p><h2 id="12-metadata-the-brains" style=""><a class="anchor hidden-xs" href="#12-metadata-the-brains" title="12-metadata-the-brains"><span class="octicon octicon-link"></span></a>12. Metadata: The Brains</h2><p>The last HTML elements we will explore are involved in metadata processes. You can think of these elements as the “brains” of a webpage because they communicate vital information to the web browser, but are not visible to a webpage visitor.</p><ol>
+<li>
+<p><code>&lt;!DOCTYPE html&gt;</code>: Tells the web browser to expect an HTML document.</p>
+</li>
+<li>
+<p><code>&lt;html&gt;...&lt;/html&gt;</code>: The root of the HTML document and parent of all other HTML elements on the webpage.</p>
+</li>
+<li>
+<p><code>&lt;head&gt;...&lt;/head&gt;</code>: Enclose other metadata about the site, such as its title.</p>
+</li>
+<li>
+<p><code>&lt;title&gt;...&lt;/title&gt;</code>: Contains the site’s title, which is one way users can find your site through a search engine, like Google.</p>
+</li>
+<li>
+<p><code>&lt;meta charset="utf-8"/&gt;</code>: Tells the web browser which character set to use. In this case, the character set is “utf-8”.</p>
+</li>
+</ol><h2 id="13-html-review" style=""><a class="anchor hidden-xs" href="#13-html-review" title="13-html-review"><span class="octicon octicon-link"></span></a>13. HTML Review</h2><h3 id="languages" style=""><a class="anchor hidden-xs" href="#languages" title="languages"><span class="octicon octicon-link"></span></a>LANGUAGES</h3><p><code>html</code>: stands for hypertext markup language, and is used to give a webpage structure.</p><p><code>css</code>: stands for cascading style sheets, and is used to style HTML elements.</p><h3 id="html-elements" style=""><a class="anchor hidden-xs" href="#html-elements" title="html-elements"><span class="octicon octicon-link"></span></a>HTML ELEMENTS</h3><ul>
+<li><code>h1</code> - <code>h6</code>: indicate text headings on a webpage. h1 is the largest heading; <code>h6</code> is the smallest.</li>
+</ul><pre><code class="html hljs"><span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>Heading<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+</code></pre><ul>
+<li><code>p</code>: used for non-heading text, such as the bodies of articles or company descriptions.</li>
+</ul><pre><code class="html hljs"><span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Description of company here.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+</code></pre><ul>
+<li><code>a</code>: short for anchor and used to add links to other webpages. Anchor elements typically have an href attribute:</li>
+</ul><pre><code class="html hljs"><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"http://codecademy.com"</span>&gt;</span>Click here<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span> to learn how to make a website!
+</code></pre><ul>
+<li><code>img</code>: used to add an image to a webpage. Image elements are self-closing and do not require a closing tag:</li>
+</ul><pre><code class="html hljs"><span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"https://images.com/favorite.png"</span>&gt;</span>
+</code></pre><ul>
+<li><code>video</code>: used to add videos to a webpage, and uses multiple attributes and a nested source element:</li>
+</ul><pre><code class="html hljs">&lt;video width=<span class="hljs-string">"320"</span> height=<span class="hljs-string">"240"</span> controls&gt;
+  <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">source</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"https://movies.io/great-clip.mp4"</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"video/mp4"</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">video</span>&gt;</span></span>
+</code></pre><ul>
+<li><code>unordered list</code>: used to create lists on a webpage and requires <code>li</code> elements inside a <code>ul</code>:</li>
+</ul><pre><code class="html hljs"><span class="hljs-tag">&lt;<span class="hljs-name">ul</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>list item<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>another item<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>yet another<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+</code></pre><ul>
+<li><code>div</code>: used to organize HTML elements into different groups, which can be given a class attribute:</li>
+</ul><pre><code class="html hljs"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"main"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>Subheading!<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+</code></pre><ul>
+<li><code>metadata tags</code>: provide metadata about a webpage.</li>
+</ul><h3 id="web-concepts" style=""><a class="anchor hidden-xs" href="#web-concepts" title="web-concepts"><span class="octicon octicon-link"></span></a>WEB CONCEPTS</h3><p>parent/child elements: used to describe HTML elements that enclose or are enclosed by other elements. For example, below the ul is the parent and the li items are children:</p><pre><code class="html hljs"><span class="hljs-tag">&lt;<span class="hljs-name">ul</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>...<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>...<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>...<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+</code></pre><h1 id="2-a-closer-look-at-css" style=""><a class="anchor hidden-xs" href="#2-a-closer-look-at-css" title="2-a-closer-look-at-css"><span class="octicon octicon-link"></span></a>2 - A Closer Look at CSS</h1><h2 id="1-why-use-css" style=""><a class="anchor hidden-xs" href="#1-why-use-css" title="1-why-use-css"><span class="octicon octicon-link"></span></a>1. Why Use CSS?</h2><p>CSS is a language used to style websites. Colors, fonts, and page layouts for a site can all be managed using CSS. The more comfortable you are with CSS, the better equipped you will be to create stylish and contemporary-looking websites.</p><h2 id="2-link-to-stylesheet" style=""><a class="anchor hidden-xs" href="#2-link-to-stylesheet" title="2-link-to-stylesheet"><span class="octicon octicon-link"></span></a>2. Link to Stylesheet</h2><p>Take a look at the web browser. Technically, this is the same site you saw in the previous exercise. It contains the exact same HTML elements and content as before. What’s missing? The CSS that was used to previously style the site has been unlinked.</p><p>The HTML link element links a CSS file to an HTML file so that CSS styling can be applied. Here’s an example of the link element:</p><pre><code class="html hljs">&lt;link rel=<span class="hljs-string">"stylesheet"</span> <span class="hljs-built_in">type</span>=<span class="hljs-string">"text/css"</span> href=<span class="hljs-string">"main.css"</span>/&gt;
+</code></pre><p>####About link:</p><p>The link element uses three attributes:</p><ul>
+<li>
+<p><strong>rel</strong>: Specifies the relationship between the current file and the file being linked to: in this case, the rel attribute is “stylesheet”.</p>
+</li>
+<li>
+<p><strong>type</strong>: Specifies the type of file linked to.</p>
+</li>
+<li>
+<p><strong>href</strong>: Provides the URL of the file being linked to.</p>
+</li>
+</ul><p>Like the HTML image element, link is self-closing. It does not need a closing tag.</p><p>In the example above, <strong>main.css</strong> is an external style sheet. Using external stylesheets is one of the most popular ways to write CSS. Inline CSS is another method.</p><p>##3. Anatomy of a CSS Rule<br>
+Awesome job! Now <strong>main.css</strong> is linked to <strong>index.html</strong>. Before we start writing our own CSS, let’s take a look at how CSS code works.</p><p>The diagram to the right shows the anatomy of a CSS rule:</p><ol>
+<li>
+<p>rule: a list of CSS instructions for how to style a specific HTML element or group of HTML elements.</p>
+</li>
+<li>
+<p>selector: specifies exactly which HTML elements to style. Here <strong>h1</strong> is the selector.</p>
+</li>
+<li>
+<p>properties and values: located inside the <strong>{ }</strong> brackets, properties and values specify what aspect of the selector to style. In the diagram’s example, the <strong>color</strong> property is set to <strong>red</strong>, which will display all <strong>h1</strong> elements in red.</p>
+</li>
+</ol><img src="http://www.clipular.com/c/5670473272918016.png?k=7xEXpoTnc6-Lj2A9SLM0q0EzXW8" alt="alt text" title="Title"><h2 id="4-font-family" style=""><a class="anchor hidden-xs" href="#4-font-family" title="4-font-family"><span class="octicon octicon-link"></span></a>4. Font-family</h2><p>One of the most effective ways to enhance the look and feel of a website is by changing the font. In CSS, font is managed using the font-family property:</p><pre><code>h1 {
+  font-family: Georgia, serif;
+}
+</code></pre><p>Above, the <strong>font-family</strong> property of the <strong>h1</strong> selector is set to the value of <strong>Georgia</strong>, with <strong>serif</strong> as a fallback font. Fallback fonts are included in case a visitor’s web browser does not support the first font. Sometimes, more than one fallback font is included.</p><h2 id="5-color" style=""><a class="anchor hidden-xs" href="#5-color" title="5-color"><span class="octicon octicon-link"></span></a>5. Color</h2><p>The new font looks great! However, black is not your only option when it comes to font color.</p><p>In CSS, the color property sets the color of a CSS selector’s font:</p><pre><code class="css hljs"><span class="hljs-selector-tag">h1</span> {
+  <span class="hljs-attribute">color</span>: red;
+}
+</code></pre><p>CSS comes equipped with 140 named colors, such as <strong>red</strong>, used above. For many situations, these named colors will suffice. However, web developers who want to get even more exact with their color choices can use hexadecimal and RGB color values.</p><ol>
+<li>
+<p>Hexadecimal color <strong>(#RRGGBB)</strong> : Hexadecimal values that represent mixtures of red, green and blue. For example, red can be expressed with the hexadecimal value of <strong>#FF0000:</strong> the value <strong>ff</strong> represents red, <strong>00</strong> represents green, and <strong>00</strong> represents blue.</p>
+</li>
+<li>
+<p>RGB (Red, Green, Blue) colors: Color created by three numbers representing red, green, and blue. When mixed together, the three values create a specific color. For example: purple can be represented as <strong>rgb(128,0,128);</strong></p>
+</li>
+</ol><h2 id="6-css-class-selectors" style=""><a class="anchor hidden-xs" href="#6-css-class-selectors" title="6-css-class-selectors"><span class="octicon octicon-link"></span></a>6. CSS Class Selectors</h2><p>Up to this point, we’ve used CSS to select an HTML element by its tag name only. However, we can use class selectors to target classes of HTML elements.</p><p>Consider the HTML below:</p><pre><code class="html hljs"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"header"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>Heading<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Paragraph<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+</code></pre><p>Here, the <strong>div</strong> is the parent element and the <strong>h2</strong> and <strong>p</strong> are children. CSS styles applied to the <strong>header</strong> class selector will automatically apply to the <strong>h2</strong> and the <strong>p</strong>.</p><p>Here’s a refresher on parent and child elements.</p><p>In CSS, class selectors can be identified by a dot <strong>.</strong> followed by the class name, as seen below:</p><pre><code class="css hljs"><span class="hljs-selector-class">.header</span> {
+  <span class="hljs-attribute">color</span>: <span class="hljs-number">#ffffff</span>; 
+}
+</code></pre><p>As a result of this code, child elements of divs with the <strong>header</strong> class will have a font color of <strong>#ffffff</strong> (white).</p><p>Below, we will use a CSS class selector to style more than one HTML element at once.</p><h2 id="7-font-size" style=""><a class="anchor hidden-xs" href="#7-font-size" title="7-font-size"><span class="octicon octicon-link"></span></a>7. font-size</h2><p>The size of text has an impact on how users experience a website. The font-size property sets the size of an HTML element’s text.</p><pre><code class="css hljs"><span class="hljs-selector-tag">h1</span> {
+  <span class="hljs-attribute">font-size</span>: <span class="hljs-number">60px</span>; 
+}
+</code></pre><p>In the CSS above, <strong>font-size</strong> is set to <strong>60px.</strong> In CSS, size can be assigned in pixels (px), rems, or ems.</p><ol>
+<li>
+<p>pixel (px): Standard unit of measurement for sizing fonts and other HTML elements.</p>
+</li>
+<li>
+<p>rem: Represents the default font size for the web browser. Rems can be used to ensure that HTML elements scale in proportion to each other on various web browsers and screen sizes. On most web browsers, <strong>1rem</strong> is equivalent to <strong>16px</strong>, <strong>2rem</strong> is equivalent to <strong>32px</strong> (a doubling), 3rem is equivalent to <strong>48px</strong> (a tripling) and so on.</p>
+</li>
+<li>
+<p>em: A relative value that changes in proportion to the size of the parent element. For example, if a parent element has <strong>font-size: 20px;</strong>, child elements with <strong>font-size: 1em</strong>; would be equivalent to 20px. Child elements with <strong>font-size: 0.5em;</strong> would be equivalent to <strong>10px</strong> (a halving) and so on.</p>
+</li>
+</ol><h2 id="8-a-background-image" style=""><a class="anchor hidden-xs" href="#8-a-background-image" title="8-a-background-image"><span class="octicon octicon-link"></span></a>8. A Background Image</h2><p>In CSS, the background-image property sets a background image of your choice for a given selector, as seen below.</p><pre><code class="css hljs"><span class="hljs-selector-class">.hero</span> {
+  <span class="hljs-attribute">background-image</span>: <span class="hljs-built_in">url</span>(<span class="hljs-string">"https://s3.amazonaws.com/codecademy-content/projects/make-a-website/lesson-2/bg.jpg"</span>);
+}
+</code></pre><p>The CSS rule above assigns the image hosted at</p><pre><code class="css hljs">https://s3.amazonaws.com/codecademy-content/projects/make-a-website/lesson-2/bg.jpg
+</code></pre><p>to elements that have a class attribute set to <strong>hero.</strong></p><p>To control the size of the chosen background image, use the property background-size as seen below:</p><pre><code class="css hljs"><span class="hljs-selector-class">.hero</span> {
+  <span class="hljs-attribute">background-image</span>: <span class="hljs-built_in">url</span>(<span class="hljs-string">"https://s3.amazonaws.com/codecademy-content/projects/make-a-website/lesson-2/bg.jpg"</span>);
+  <span class="hljs-attribute">background-size</span>: cover;
+}
+</code></pre><p>Here, we have specified that we want the image to completely cover elements with the <strong>.hero</strong> class.</p><h2 id="9-css-id-selectors" style=""><a class="anchor hidden-xs" href="#9-css-id-selectors" title="9-css-id-selectors"><span class="octicon octicon-link"></span></a>9. CSS id Selectors</h2><p>The background image makes a big difference. Nice work!</p><p>A previous exercise introduced CSS class selectors to style HTML elements of specific classes. What if a webpage design calls for an individual page element to be styled uniquely, but all other elements of that kind to be styled a different way?</p><p>For example, to style one anchor element differently than all the others on a webpage, you could use the HTML id attribute:</p><pre><code class="html hljs">&lt;a id=<span class="hljs-string">"learn-code"</span> href=<span class="hljs-string">"https://www.codecademy.com"</span>&gt;Click here to learn to code!<span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span></span>
+</code></pre><p>Then in the CSS file, you would create a rule for the id selector, using a <strong>#</strong> symbol:</p><pre><code class="css hljs"><span class="hljs-selector-id">#learn-code</span> {
+  <span class="hljs-attribute">color</span>: <span class="hljs-number">#2e69a3</span>;  
+}
+</code></pre><p>About using id:</p><ol>
+<li>
+<p>An id attribute can only be used once because the id is unique to the element it is assigned to.</p>
+</li>
+<li>
+<p>Ids have greater specificity than classes. If an HTML element is using both id and class attributes, the CSS rule for the id will take precedence over that of the class.</p>
+</li>
+</ol><h2 id="10-css-review" style=""><a class="anchor hidden-xs" href="#10-css-review" title="10-css-review"><span class="octicon octicon-link"></span></a>10. CSS-review</h2><p>WEB CONCEPTS</p><ul>
+<li>
+<p>CSS: Language used to style websites. Colors, fonts, and page layouts for a site are managed using CSS.</p>
+</li>
+<li>
+<p>CSS Selectors: specifies exactly which HTML elements to style</p>
+</li>
+<li>
+<p>class selectors: used to target classes of HTML elements</p>
+</li>
+<li>
+<p>id selectors: used to style an HTML element which has an id attribute.</p>
+</li>
+<li>
+<p>External Stylesheet: CSS file that styles an HTML file externally via the HTML link element.</p>
+</li>
+</ul><p>CSS PROPERTIES</p><ul>
+<li>font-family: sets font for a CSS selector.</li>
+<li>color: sets font color for the CSS selector.</li>
+<li>font-size: sets font size for text.</li>
+<li>background-image: sets a background image of your choosing for a given selector.</li>
+</ul><p><a href="https://embed.plnkr.co/zzJYvIgJV4kywnvPEdgG/" target="_blank">Link</a></p><hr><h1 id="3-boundaries-and-space" style=""><a class="anchor hidden-xs" href="#3-boundaries-and-space" title="3-boundaries-and-space"><span class="octicon octicon-link"></span></a>3 - Boundaries and Space</h1><h2 id="1-the-box-model" style=""><a class="anchor hidden-xs" href="#1-the-box-model" title="1-the-box-model"><span class="octicon octicon-link"></span></a>1. The Box Model</h2><p>Observe the CSS box model diagram to the right:</p><ol>
+<li>
+<p>content: Includes text, images, or other media contained within an HTML element.</p>
+</li>
+<li>
+<p>padding: The space between the content and the border. You can think of this like inner space.</p>
+</li>
+<li>
+<p>border: The outline of an HTML page element. You can think of it like a picture frame that contains the element.</p>
+</li>
+</ol><p>margin: The space between the HTML page element and the next nearest element(s).</p><img src="http://www.clipular.com/c/5247829700509696.png?k=l-W8ImNglq4EyZ1QBFOzd4KPU64" alt="alt text" title="Title"><h2 id="2-create-border" style=""><a class="anchor hidden-xs" href="#2-create-border" title="2-create-border"><span class="octicon octicon-link"></span></a>2. Create Border</h2><p>The border property can be used to visually define a page element’s outer edge.</p><p>In CSS, the border property’s value requires three parts:</p><ol>
+<li>thickness: Sets the thickness of the border, using pixels, ems, or rems.</li>
+<li>type: Sets the border type. Common options are <strong>solid</strong>, <strong>dotted</strong>, and <strong>dashed</strong>. There are many others.<br>
+color: sets the border’s color, using named colors, HEX, or RGB values.<br>
+The CSS below gives a paragraph element a solid black border that is 2 pixels thick:</li>
+</ol><pre><code class="css hljs"><span class="hljs-selector-tag">p</span> {
+  <span class="hljs-attribute">border</span>: <span class="hljs-number">2px</span> solid black; 
+}
+</code></pre><h2 id="3-working-with-padding" style=""><a class="anchor hidden-xs" href="#3-working-with-padding" title="3-working-with-padding"><span class="octicon octicon-link"></span></a>3. Working with Padding</h2><p>The CSS padding property controls the empty space between the page element’s content and its border. Increasing a page element’s padding makes the space around the content more spacious, while decreasing it makes the space more compact.</p><pre><code class="css hljs"><span class="hljs-selector-tag">p</span> {
+  <span class="hljs-attribute">padding</span>: <span class="hljs-number">20px</span>; 
+}
+</code></pre><p>The CSS above would give paragraph elements a padding of <strong>20px</strong>.</p><h2 id="4-working-with-margin" style=""><a class="anchor hidden-xs" href="#4-working-with-margin" title="4-working-with-margin"><span class="octicon octicon-link"></span></a>4. Working with Margin</h2><p>The CSS margin property controls the space between different HTML elements on a webpage. Use margin to bring page elements closer together or to move them further apart.</p><p>The CSS below ensures <strong>2rems</strong> of space between elements with the class <strong>answer</strong> and surrounding page elements.</p><pre><code class="css hljs"><span class="hljs-selector-class">.answer</span> {
+  <span class="hljs-attribute">margin</span>: <span class="hljs-number">2rem</span>;
+}
+</code></pre><h2 id="5-more-margins" style=""><a class="anchor hidden-xs" href="#5-more-margins" title="5-more-margins"><span class="octicon octicon-link"></span></a>5. More Margins</h2><p>The <strong>margin</strong> property creates space on all sides of a page element. It’s also possible to set separate margin spacings on each side of an element.</p><p>Additional margin properties:</p><p>margin-top: Sets the top margin.<br>
+margin-bottom: Sets the bottom margin.<br>
+margin-left: Sets the left margin.<br>
+margin-right: Sets the right margin.<br>
+Note: Below we will change margin properties for a div that encloses HTML figure elements. Figures are used to organize visuals, such as photos and diagrams.</p><h2 id="6-understanding-display" style=""><a class="anchor hidden-xs" href="#6-understanding-display" title="6-understanding-display"><span class="octicon octicon-link"></span></a>6. Understanding Display</h2><p>Using borders, padding, and margins allows us to control boundaries and space for individual HTML elements.</p><p>But what CSS properties are available to move elements around on the page and create unique page layouts? The CSS display and position properties help accomplish this.</p><p>DISPLAY</p><p>Not all HTML elements are displayed on a page in the same way. Display types determine how HTML elements will be arranged in relation to each other.</p><p>The diagram to the right illustrates the block and inline display types.</p><img src="http://www.clipular.com/c/5097705024258048.png?k=57mqppdEqc9FHBK4pwNezt9OXdI" alt="alt text" title="Title"><h2 id="7-keep-it-inline" style=""><a class="anchor hidden-xs" href="#7-keep-it-inline" title="7-keep-it-inline"><span class="octicon octicon-link"></span></a>7. Keep it Inline</h2><p>Display types can be overwritten in CSS by using the display property.</p><p>For example, we can make list items appear on the same line by setting display to <strong>inline</strong>:</p><pre><code class="css hljs"><span class="hljs-selector-tag">li</span> {
+  <span class="hljs-attribute">display</span>: inline;
+}
+</code></pre><p>Note: Below, we will encounter an HTML nav element. Navs are used to organize site navigation menus on a webpage.</p><h2 id="8-using-float" style=""><a class="anchor hidden-xs" href="#8-using-float" title="8-using-float"><span class="octicon octicon-link"></span></a>8. Using Float</h2><p>Nice work! The navbar is starting to come together nicely. It would be even better if we could get the <strong>Contact</strong> button to fill in the empty corner on the bottom right.</p><p>To achieve this, we can use the CSS float property. By using float, we have the option of floating elements left or right.</p><p>Consider the example code below. The class selector, <strong>.logo</strong>, floats <strong>left</strong>, and the id selector <strong>#search-bar</strong> floats <strong>right</strong>:</p><pre><code class="css hljs"><span class="hljs-selector-class">.logo</span> {
+  <span class="hljs-attribute">float</span>: left; 
+}
+
+<span class="hljs-selector-id">#search-bar</span> {
+  <span class="hljs-attribute">float</span>: right; 
+}
+</code></pre><p>Let’s arrange the Contact button using float</p><h2 id="9-display--flex" style=""><a class="anchor hidden-xs" href="#9-display--flex" title="9-display--flex"><span class="octicon octicon-link"></span></a>9. Display : Flex</h2><p>In the web browser, the gallery images that were arranged neatly in rows are now stacked on the left side of the webpage.</p><p>The CSS display value that arranged the images, flex, has been removed. In addition to other capabilities, flex can be used to easily align multiple page elements horizontally.</p><p>In the example code below, there is a div with class <strong>parent</strong>:</p><pre><code class="css hljs">&lt;div class="parent"&gt;
+   ...
+&lt;/div&gt;
+</code></pre><p>To make children of the div align horizontally on the webpage, in CSS we can use:</p><pre><code class="css hljs"><span class="hljs-selector-class">.parent</span> {
+  <span class="hljs-attribute">display</span>: flex;
+}
+</code></pre><p>Children elements of the div with class <strong>parent</strong> will now align horizontally. We can make sure no child element moves off the page by using <strong>flex-wrap: wrap;</strong>:</p><pre><code class="css hljs"><span class="hljs-selector-class">.parent</span> {
+  <span class="hljs-attribute">display</span>: flex;
+  <span class="hljs-attribute">flex-wrap</span>: wrap;
+}
+</code></pre><p>Finally, to center rows of children elements, we can use <strong>justify-content: center;</strong>:</p><pre><code class="css hljs"><span class="hljs-selector-class">.parent</span> {
+  <span class="hljs-attribute">display</span>: flex; 
+  <span class="hljs-attribute">flex-wrap</span>: wrap; 
+  <span class="hljs-attribute">justify-content</span>: center;
+}
+</code></pre><h2 id="10working-with-position" style=""><a class="anchor hidden-xs" href="#10working-with-position" title="10working-with-position"><span class="octicon octicon-link"></span></a>10.Working with Position</h2><p>The CSS position property enables you to position HTML elements in exact locations on a webpage. One useful value for this property is relative. This value positions page elements on a webpage relative to where they would normally appear.</p><p>By first setting <strong>position: relative;</strong>, you can then use the CSS properties <strong>top</strong>, <strong>left</strong>, <strong>bottom</strong>, and <strong>right</strong> to shift an element away from where it would have normally appeared on the page.</p><p>The code snippet below moves a div with the class <strong>container</strong> <strong>10px</strong> away from the up and <strong>20px</strong> away from the left side of the page.</p><pre><code class="css hljs"><span class="hljs-selector-class">.container</span> {
+  <span class="hljs-attribute">position</span>: relative; 
+  <span class="hljs-attribute">top</span>: <span class="hljs-number">10px</span>; 
+  <span class="hljs-attribute">left</span>: <span class="hljs-number">20px</span>;
+}
+</code></pre><p>Ever click a button on a webpage that seemed to move down and then back up like a real-life button? We can implement this trick using the <strong>position</strong> property.</p><h2 id="11review" style=""><a class="anchor hidden-xs" href="#11review" title="11review"><span class="octicon octicon-link"></span></a>11.Review</h2><iframe src="https://embed.plnkr.co/V4xDkfioJehSRYQd05RX/" style="height: 300px; width: 100%;"></iframe><hr><h1 id="4-building-with-bootstrap" style=""><a class="anchor hidden-xs" href="#4-building-with-bootstrap" title="4-building-with-bootstrap"><span class="octicon octicon-link"></span></a>4 - Building with Bootstrap</h1><h2 id="1-css-frameworks" style=""><a class="anchor hidden-xs" href="#1-css-frameworks" title="1-css-frameworks"><span class="octicon octicon-link"></span></a>1. CSS Frameworks</h2><p>Bootstrap is a popular CSS framework with prewritten CSS rules designed to help you build webpages faster.</p><p>Take a look at the web browser. In this lesson, we will build this webpage up from scratch using a combination of Bootstrap and custom CSS.</p><p>Also in this lesson, we will encounter three new HTML elements:</p><p>header: Used to organize headers on a webpage.</p><p>footer: Used to organize footers on a webpage.</p><p>section: Defines sections on a webpage.</p><h2 id="2-connecting-to-bootstrap" style=""><a class="anchor hidden-xs" href="#2-connecting-to-bootstrap" title="2-connecting-to-bootstrap"><span class="octicon octicon-link"></span></a>2. Connecting to Bootstrap</h2><p>Before Bootstrap can work for us, we need to link to it.</p><p>In earlier lessons, we linked only to <strong>main.css.</strong> Now, in addition to <strong>main.css,</strong> we will link to a URL that hosts Bootstrap.</p><p>The HTML link element makes Bootstrap available to us. Remember that the link element is typically contained within HTML head tags.</p><pre><code class="html hljs"><span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+  ... 
+  <span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">"stylesheet"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"</span>/&gt;</span>
+  ...
+<span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+</code></pre><p>Above, the <strong>href</strong> attribute is set to the URL <strong><a href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" target="_blank">https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css</a>.</strong></p><p>Let’s explore what Bootstrap can do for us.</p><h2 id="3-on-the-grid" style=""><a class="anchor hidden-xs" href="#3-on-the-grid" title="3-on-the-grid"><span class="octicon octicon-link"></span></a>3. On the Grid</h2><p>One of the reasons Bootstrap and frameworks like it are so popular is because they offer grids. A grid makes it possible to organize HTML elements using preconfigured columns. Using a grid, you can customize responsive page layouts quickly and reliably.</p><p>The Bootstrap grid contains 12 equal-sized columns, as seen in the diagram on the right. HTML elements are arranged to span different numbers of columns in order to create custom page layouts.</p><p>In the diagram, observe the following:</p><ol>
+<li>
+<p>Bootstrap’s grid columns are represented by 12 vertical bars. The boxes represent HTML elements.</p>
+</li>
+<li>
+<p>The words “container”, “jumbotron”, “col-sm-6” and “col-sm-3” refer to Bootstrap classes.</p>
+</li>
+<li>
+<p>The element with class “jumbotron” spans the entire width of the webpage, beyond the borders of the grid.</p>
+</li>
+<li>
+<p>Elements inside the second “container”, such as “col-sm-6” and “col-sm-3” are contained within the grid columns.</p>
+</li>
+<li>
+<p>Elements labeled “col-sm-3” take up three grid columns; elements labeled “col-sm-6” take up six grid columns.</p>
+</li>
+</ol><img src="http://www.clipular.com/c/6537072850763776.png?k=h2eoo7RuypHQwgdwqTDPMnXjnWE" alt="alt text" title="Title"><h2 id="4-headernavigation" style=""><a class="anchor hidden-xs" href="#4-headernavigation" title="4-headernavigation"><span class="octicon octicon-link"></span></a>4. Header/Navigation</h2><p>Let’s use Bootstrap’s grid to create a simple header with navbar.</p><p>In the example code below, an HTML header element with Bootstrap’s predefined <strong>container</strong> class is used:</p><pre><code class="html hljs">&lt;header <span class="hljs-keyword">class</span>=<span class="hljs-string">"container"</span>&gt;
+ ...
+&lt;/header&gt;
+</code></pre><p>Inside the header, a row is created by using a div with Bootstrap’s <strong>row</strong> class:</p><pre><code class="html hljs">&lt;header <span class="hljs-keyword">class</span>=<span class="hljs-string">"container"</span>&gt;
+  &lt;div <span class="hljs-keyword">class</span>=<span class="hljs-string">"row"</span>&gt;
+  &lt;/div&gt; 
+&lt;/header&gt;
+</code></pre><p>Finally, the row is cut into two parts:</p><pre><code class="html hljs"><span class="hljs-tag">&lt;<span class="hljs-name">header</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"container"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"row"</span>&gt;</span>
+   <span class="hljs-tag">&lt;<span class="hljs-name">h1</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-sm-4"</span>&gt;</span>Heading<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+   <span class="hljs-tag">&lt;<span class="hljs-name">nav</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-sm-8 text-right"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>nav item 1<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>nav item 2<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>nav item 3<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+   <span class="hljs-tag">&lt;/<span class="hljs-name">nav</span>&gt;</span> 
+ <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">header</span>&gt;</span>
+</code></pre><p>The first part consists of the <strong>h1</strong> with Bootstrap’s class <strong>col-sm-4.</strong> It will take up the first four columns on the grid. The second part consists of the <strong>nav</strong> element with class <strong>col-sm-8.</strong> It will take up the remaining eight grid columns. <strong>text-right</strong> indicates that text will be arranged on the right side of the <strong>nav.</strong></p><h2 id="5-the-jumbotron" style=""><a class="anchor hidden-xs" href="#5-the-jumbotron" title="5-the-jumbotron"><span class="octicon octicon-link"></span></a>5. The Jumbotron</h2><p>In addition to a header/navigation, many websites have a large showcase area featuring important content. Bootstrap refers to this as a jumbotron. Below is an example implementation of a jumbotron.</p><p>First, a new section element is created and assigned the jumbotron class:</p><pre><code class="html hljs">&lt;section <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"jumbotron"</span>&gt;
+
+<span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">section</span>&gt;</span></span>
+</code></pre><p>Next a div with the Bootstrap class container is used:</p><pre><code class="html hljs">&lt;section <span class="hljs-keyword">class</span>=<span class="hljs-string">"jumbotron"</span>&gt;
+  &lt;div <span class="hljs-keyword">class</span>=<span class="hljs-string">"container"</span>&gt;
+  ... 
+  &lt;/div&gt;
+&lt;/section&gt;
+</code></pre><p>A div with the Bootstrap class row text-center can center subsequent child elements which will contain text:</p><pre><code class="html hljs">&lt;section <span class="hljs-keyword">class</span>=<span class="hljs-string">"jumbotron"</span>&gt;
+  &lt;div <span class="hljs-keyword">class</span>=<span class="hljs-string">"container"</span>&gt;
+    &lt;div <span class="hljs-keyword">class</span>=<span class="hljs-string">"row text-center"</span>&gt;
+       ...
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/section&gt;
+</code></pre><p>The … is a placeholder for HTML elements containing text, such as h2, p or anchor elements.</p><p>Let’s explore the jumbotron feature by creating our own below!</p><h2 id="6-supporting-content" style=""><a class="anchor hidden-xs" href="#6-supporting-content" title="6-supporting-content"><span class="octicon octicon-link"></span></a>6. Supporting Content</h2><p>Many websites have a supporting content area. Supporting content can be arranged using Bootstrap’s grid. Below is an example implementation of a supporting content area.</p><p>First, an HTML section element with the <strong>container</strong> class is used:</p><pre><code class="html hljs">&lt;section <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"container"</span>&gt;
+
+<span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">section</span>&gt;</span></span>
+</code></pre><p>Next, div elements with the <strong>ow</strong> class are added:</p><pre><code class="html hljs">&lt;section <span class="hljs-keyword">class</span>=<span class="hljs-string">"container"</span>&gt;
+  &lt;div <span class="hljs-keyword">class</span>=<span class="hljs-string">"row"</span>&gt;
+  &lt;/div&gt;
+  &lt;div <span class="hljs-keyword">class</span>=<span class="hljs-string">"row"</span>&gt;
+  &lt;/div&gt;
+&lt;/section&gt;
+</code></pre><p>Finally, the rows are divided by using divs with Bootstrap’s <strong>col-sm-…</strong> class.</p><pre><code class="html hljs">&lt;section <span class="hljs-keyword">class</span>=<span class="hljs-string">"container"</span>&gt;
+  &lt;div <span class="hljs-keyword">class</span>=<span class="hljs-string">"row"</span>&gt;
+    &lt;div <span class="hljs-keyword">class</span>=<span class="hljs-string">"col-sm-6"</span>&gt;
+     
+    &lt;/div&gt;
+    &lt;div <span class="hljs-keyword">class</span>=<span class="hljs-string">"col-sm-6"</span>&gt;
+     
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div <span class="hljs-keyword">class</span>=<span class="hljs-string">"row"</span>&gt;
+    &lt;div <span class="hljs-keyword">class</span>=<span class="hljs-string">"col-sm-6"</span>&gt;
+     
+    &lt;/div&gt;
+    &lt;div <span class="hljs-keyword">class</span>=<span class="hljs-string">"col-sm-6"</span>&gt;
+     
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/section&gt;
+</code></pre><p>Above, two rows are divided into two equal parts. Each part takes up 6 of bootstrap’s 12 columns. Using the <strong>col-sm-6</strong> class ensures that this layout will appear when the user’s screen is the width of a tablet device(768 pixels). On narrower screens, such as an iPhone, only one image per row will appear.</p><h2 id="7-footers" style=""><a class="anchor hidden-xs" href="#7-footers" title="7-footers"><span class="octicon octicon-link"></span></a>7. Footers</h2><p>Congratulations! You’ve made it to the bottom of the webpage: the footer!</p><p>Footers display copyright information, social media links and sometimes site navigation.</p><p>Below is one possible implementation for a footer section using Bootstrap:</p><p>First, a footer element with Bootstrap’s <strong>container</strong> class is used:</p><pre><code class="html hljs">&lt;footer <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"container"</span>&gt;
+
+<span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">footer</span>&gt;</span></span>
+</code></pre><p>Inside the footer, a div with Bootstrap’s <strong>row</strong> class is added to hold footer content:</p><pre><code class="html hljs">&lt;footer <span class="hljs-keyword">class</span>=<span class="hljs-string">"container"</span>&gt;
+  &lt;div <span class="hljs-keyword">class</span>=<span class="hljs-string">"row"</span>&gt;
+  ... 
+  &lt;/div&gt;
+&lt;/footer&gt;
+</code></pre><p>Finally, the row is divided into parts using Bootstrap’s grid. Here is one suggestion:</p><pre><code class="html hljs">&lt;footer <span class="hljs-keyword">class</span>=<span class="hljs-string">"container"</span>&gt;
+  &lt;div <span class="hljs-keyword">class</span>=<span class="hljs-string">"row"</span>&gt;
+    &lt;p <span class="hljs-keyword">class</span>=<span class="hljs-string">"col-sm-4"</span>&gt;...&lt;/p&gt;
+    &lt;ul <span class="hljs-keyword">class</span>=<span class="hljs-string">"col-sm-8"</span>&gt;
+      &lt;li <span class="hljs-keyword">class</span>=<span class="hljs-string">"col-sm-1"</span>&gt;...&lt;/li&gt;
+      &lt;li <span class="hljs-keyword">class</span>=<span class="hljs-string">"col-sm-1"</span>&gt;...&lt;/li&gt;
+      &lt;li <span class="hljs-keyword">class</span>=<span class="hljs-string">"col-sm-1"</span>&gt;...&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/div&gt;
+&lt;/footer&gt;
+</code></pre><p>Above, the row is broken into three parts: a <strong>p</strong> element that takes up four columns, a <strong>ul</strong> which takes up 8 columns, and <strong>li</strong> items which take up 1 column each. The <strong>lis</strong> could hold navigation menu items or social media icons.</p><p>Again, because the <strong>col-sm-…</strong> class is used, this layout will appear on tablet-width screens and wider. Screen sizes smaller than tablet-width (768 pixels), will not maintain this layout.</p><p>Now let’s write the code for</p><iframe src="https://embed.plnkr.co/EVyv7YsrPpvqUn1kxl6G/" style="height: 300px; width: 100%;"></iframe></div>
+    <div class="ui-toc dropup unselectable hidden-print" style="display:none;">
+        <div class="pull-right dropdown">
+            <a id="tocLabel" class="ui-toc-label btn btn-default" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" title="Table of content">
+                <i class="fa fa-bars"></i>
+            </a>
+            <ul id="ui-toc" class="ui-toc-dropdown dropdown-menu" aria-labelledby="tocLabel">
+                <div class="toc"><ul class="nav"><li><a href="#make-a-website-by-codecademy">Make a Website by Codecademy</a></li><li class=""><a href="#1-site-structure">1 - Site Structure</a><ul class="nav"><li><a href="#1-what-are-html-and-css">1. What are HTML and CSS?</a></li><li><a href="#2-anatomy-of-an-html-element">2. Anatomy of an HTML Element</a></li><li><a href="#3-add-a-heading">3. Add a Heading</a></li><li><a href="#4-add-a-paragraph">4. Add a Paragraph</a></li><li><a href="#5-anchor-elements">5. Anchor Elements</a></li><li><a href="#6-a-closer-look">6. A Closer Look</a></li><li><a href="#7-adding-images">7. Adding Images</a></li><li><a href="#8-add-a-video">8. Add a Video</a></li><li><a href="#9-create-an-unordered-list">9. Create an Unordered List</a></li><li><a href="#10-parent-and-child-elements">10. Parent and Child Elements</a></li><li><a href="#11-add-a-div">11. Add a Div</a></li><li class=""><a href="#12-metadata-the-brains">12. Metadata: The Brains</a></li><li class=""><a href="#13-html-review">13. HTML Review</a><ul class="nav"><li class=""><a href="#languages">LANGUAGES</a></li><li class=""><a href="#html-elements">HTML ELEMENTS</a></li><li class=""><a href="#web-concepts">WEB CONCEPTS</a></li></ul></li></ul></li><li class=""><a href="#2-a-closer-look-at-css">2 - A Closer Look at CSS</a><ul class="nav"><li><a href="#1-why-use-css">1. Why Use CSS?</a></li><li class=""><a href="#2-link-to-stylesheet">2. Link to Stylesheet</a></li><li class=""><a href="#4-font-family">4. Font-family</a></li><li><a href="#5-color">5. Color</a></li><li class=""><a href="#6-css-class-selectors">6. CSS Class Selectors</a></li><li class=""><a href="#7-font-size">7. font-size</a></li><li class=""><a href="#8-a-background-image">8. A Background Image</a></li><li class=""><a href="#9-css-id-selectors">9. CSS id Selectors</a></li><li class=""><a href="#10-css-review">10. CSS-review</a></li></ul></li><li class=""><a href="#3-boundaries-and-space">3 - Boundaries and Space</a><ul class="nav"><li class=""><a href="#1-the-box-model">1. The Box Model</a></li><li class=""><a href="#2-create-border">2. Create Border</a></li><li class=""><a href="#3-working-with-padding">3. Working with Padding</a></li><li class=""><a href="#4-working-with-margin">4. Working with Margin</a></li><li class=""><a href="#5-more-margins">5. More Margins</a></li><li class=""><a href="#6-understanding-display">6. Understanding Display</a></li><li class=""><a href="#7-keep-it-inline">7. Keep it Inline</a></li><li class=""><a href="#8-using-float">8. Using Float</a></li><li class=""><a href="#9-display--flex">9. Display : Flex</a></li><li class=""><a href="#10working-with-position">10.Working with Position</a></li><li><a href="#11review">11.Review</a></li></ul></li><li class=""><a href="#4-building-with-bootstrap">4 - Building with Bootstrap</a><ul class="nav"><li class=""><a href="#1-css-frameworks">1. CSS Frameworks</a></li><li class=""><a href="#2-connecting-to-bootstrap">2. Connecting to Bootstrap</a></li><li class=""><a href="#3-on-the-grid">3. On the Grid</a></li><li class=""><a href="#4-headernavigation">4. Header/Navigation</a></li><li class=""><a href="#5-the-jumbotron">5. The Jumbotron</a></li><li class=""><a href="#6-supporting-content">6. Supporting Content</a></li><li class=""><a href="#7-footers">7. Footers</a></li></ul></li></ul></div><div class="toc-menu"><a class="expand-toggle" href="#">Expand all</a><a class="back-to-top" href="#">Back to top</a><a class="go-to-bottom" href="#">Go to bottom</a></div>
+            </ul>
+        </div>
+    </div>
+    <div id="ui-toc-affix" class="ui-affix-toc ui-toc-dropdown unselectable hidden-print" data-spy="affix" style="top:17px;display:none;"  >
+        <div class="toc"><ul class="nav"><li><a href="#make-a-website-by-codecademy">Make a Website by Codecademy</a></li><li class=""><a href="#1-site-structure">1 - Site Structure</a><ul class="nav"><li><a href="#1-what-are-html-and-css">1. What are HTML and CSS?</a></li><li><a href="#2-anatomy-of-an-html-element">2. Anatomy of an HTML Element</a></li><li><a href="#3-add-a-heading">3. Add a Heading</a></li><li><a href="#4-add-a-paragraph">4. Add a Paragraph</a></li><li><a href="#5-anchor-elements">5. Anchor Elements</a></li><li><a href="#6-a-closer-look">6. A Closer Look</a></li><li><a href="#7-adding-images">7. Adding Images</a></li><li><a href="#8-add-a-video">8. Add a Video</a></li><li><a href="#9-create-an-unordered-list">9. Create an Unordered List</a></li><li><a href="#10-parent-and-child-elements">10. Parent and Child Elements</a></li><li><a href="#11-add-a-div">11. Add a Div</a></li><li class=""><a href="#12-metadata-the-brains">12. Metadata: The Brains</a></li><li class=""><a href="#13-html-review">13. HTML Review</a><ul class="nav"><li class=""><a href="#languages">LANGUAGES</a></li><li class=""><a href="#html-elements">HTML ELEMENTS</a></li><li class=""><a href="#web-concepts">WEB CONCEPTS</a></li></ul></li></ul></li><li class=""><a href="#2-a-closer-look-at-css">2 - A Closer Look at CSS</a><ul class="nav"><li><a href="#1-why-use-css">1. Why Use CSS?</a></li><li class=""><a href="#2-link-to-stylesheet">2. Link to Stylesheet</a></li><li class=""><a href="#4-font-family">4. Font-family</a></li><li><a href="#5-color">5. Color</a></li><li class=""><a href="#6-css-class-selectors">6. CSS Class Selectors</a></li><li class=""><a href="#7-font-size">7. font-size</a></li><li class=""><a href="#8-a-background-image">8. A Background Image</a></li><li class=""><a href="#9-css-id-selectors">9. CSS id Selectors</a></li><li class=""><a href="#10-css-review">10. CSS-review</a></li></ul></li><li class=""><a href="#3-boundaries-and-space">3 - Boundaries and Space</a><ul class="nav"><li class=""><a href="#1-the-box-model">1. The Box Model</a></li><li class=""><a href="#2-create-border">2. Create Border</a></li><li class=""><a href="#3-working-with-padding">3. Working with Padding</a></li><li class=""><a href="#4-working-with-margin">4. Working with Margin</a></li><li class=""><a href="#5-more-margins">5. More Margins</a></li><li class=""><a href="#6-understanding-display">6. Understanding Display</a></li><li class=""><a href="#7-keep-it-inline">7. Keep it Inline</a></li><li class=""><a href="#8-using-float">8. Using Float</a></li><li class=""><a href="#9-display--flex">9. Display : Flex</a></li><li class=""><a href="#10working-with-position">10.Working with Position</a></li><li><a href="#11review">11.Review</a></li></ul></li><li class=""><a href="#4-building-with-bootstrap">4 - Building with Bootstrap</a><ul class="nav"><li class=""><a href="#1-css-frameworks">1. CSS Frameworks</a></li><li class=""><a href="#2-connecting-to-bootstrap">2. Connecting to Bootstrap</a></li><li class=""><a href="#3-on-the-grid">3. On the Grid</a></li><li class=""><a href="#4-headernavigation">4. Header/Navigation</a></li><li class=""><a href="#5-the-jumbotron">5. The Jumbotron</a></li><li class=""><a href="#6-supporting-content">6. Supporting Content</a></li><li class=""><a href="#7-footers">7. Footers</a></li></ul></li></ul></div><div class="toc-menu"><a class="expand-toggle" href="#">Expand all</a><a class="back-to-top" href="#">Back to top</a><a class="go-to-bottom" href="#">Go to bottom</a></div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha256-U5ZEeKfGNOja007MMD3YBI0A3OSZOQbeG6z2f2Y0hu8=" crossorigin="anonymous" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gist-embed/2.6.0/gist-embed.min.js" integrity="sha256-KyF2D6xPIJUW5sUDSs93vWyZm+1RzIpKCexxElmxl8g=" crossorigin="anonymous" defer></script>
+    <script>
+        var markdown = $(".markdown-body");
+        //smooth all hash trigger scrolling
+        function smoothHashScroll() {
+            var hashElements = $("a[href^='#']").toArray();
+            for (var i = 0; i < hashElements.length; i++) {
+                var element = hashElements[i];
+                var $element = $(element);
+                var hash = element.hash;
+                if (hash) {
+                    $element.on('click', function (e) {
+                        // store hash
+                        var hash = this.hash;
+                        if ($(hash).length <= 0) return;
+                        // prevent default anchor click behavior
+                        e.preventDefault();
+                        // animate
+                        $('body, html').stop(true, true).animate({
+                            scrollTop: $(hash).offset().top
+                        }, 100, "linear", function () {
+                            // when done, add hash to url
+                            // (default click behaviour)
+                            window.location.hash = hash;
+                        });
+                    });
+                }
+            }
+        }
+
+        smoothHashScroll();
+        var toc = $('.ui-toc');
+        var tocAffix = $('.ui-affix-toc');
+        var tocDropdown = $('.ui-toc-dropdown');
+        //toc
+        tocDropdown.click(function (e) {
+            e.stopPropagation();
+        });
+
+        var enoughForAffixToc = true;
+
+        function generateScrollspy() {
+            $(document.body).scrollspy({
+                target: ''
+            });
+            $(document.body).scrollspy('refresh');
+            if (enoughForAffixToc) {
+                toc.hide();
+                tocAffix.show();
+            } else {
+                tocAffix.hide();
+                toc.show();
+            }
+            $(document.body).scroll();
+        }
+
+        function windowResize() {
+            //toc right
+            var paddingRight = parseFloat(markdown.css('padding-right'));
+            var right = ($(window).width() - (markdown.offset().left + markdown.outerWidth() - paddingRight));
+            toc.css('right', right + 'px');
+            //affix toc left
+            var newbool;
+            var rightMargin = (markdown.parent().outerWidth() - markdown.outerWidth()) / 2;
+            //for ipad or wider device
+            if (rightMargin >= 133) {
+                newbool = true;
+                var affixLeftMargin = (tocAffix.outerWidth() - tocAffix.width()) / 2;
+                var left = markdown.offset().left + markdown.outerWidth() - affixLeftMargin;
+                tocAffix.css('left', left + 'px');
+            } else {
+                newbool = false;
+            }
+            if (newbool != enoughForAffixToc) {
+                enoughForAffixToc = newbool;
+                generateScrollspy();
+            }
+        }
+        $(window).resize(function () {
+            windowResize();
+        });
+        $(document).ready(function () {
+            windowResize();
+            generateScrollspy();
+        });
+
+        //remove hash
+        function removeHash() {
+            window.location.hash = '';
+        }
+
+        var backtotop = $('.back-to-top');
+        var gotobottom = $('.go-to-bottom');
+
+        backtotop.click(function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+            if (scrollToTop)
+                scrollToTop();
+            removeHash();
+        });
+        gotobottom.click(function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+            if (scrollToBottom)
+                scrollToBottom();
+            removeHash();
+        });
+
+        var toggle = $('.expand-toggle');
+        var tocExpand = false;
+
+        checkExpandToggle();
+        toggle.click(function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+            tocExpand = !tocExpand;
+            checkExpandToggle();
+        })
+
+        function checkExpandToggle () {
+            var toc = $('.ui-toc-dropdown .toc');
+            var toggle = $('.expand-toggle');
+            if (!tocExpand) {
+                toc.removeClass('expand');
+                toggle.text('Expand all');
+            } else {
+                toc.addClass('expand');
+                toggle.text('Collapse all');
+            }
+        }
+
+        function scrollToTop() {
+            $('body, html').stop(true, true).animate({
+                scrollTop: 0
+            }, 100, "linear");
+        }
+
+        function scrollToBottom() {
+            $('body, html').stop(true, true).animate({
+                scrollTop: $(document.body)[0].scrollHeight
+            }, 100, "linear");
+        }
+    </script>
+</body>
+
+</html>
